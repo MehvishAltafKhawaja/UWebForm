@@ -1,0 +1,73 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="WebFormClass.Layout" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Shop</title>
+
+   <link href="CSS/StyleSheet.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+
+            <!-- Header / Navbar -->
+            <header class="header">
+                <nav class="navbar">
+                    <a href="Index.aspx" class="brand">
+                        <span class="brand-icon">&lt;/&gt;</span>
+                        <span>My <strong>Shop</strong></span>
+                    </a>
+
+                    <div class="nav-links">
+                        <a href="Default.aspx" class="active">Home</a>
+                        <a href="About.aspx">About</a>
+                        <a href="Skills.aspx">Skills</a>
+                        <a href="IsPostBack.aspx">PostBack</a>
+                        <a href="Education.aspx">Education</a>
+                        <a href="Contactus.aspx">Contact</a>
+                    </div>
+
+                    <a href="Resume.pdf" class="resume-btn" target="_blank">
+                        Download Resume
+                    </a>
+                </nav>
+            </header>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div>
+                        <h3>Shop Me</h3>
+                        <p>Software Development | Cloud Computing | Data Science</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <a href="Index.aspx">Home</a>
+                        <a href="About.aspx">About</a>
+                        <a href="IsPostBack.aspx">PostBack</a>
+                        <a href="Contactus.aspx">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+                </div>
+            </footer>
+
+        </div>
+    </form>
+</body>
+</html>
